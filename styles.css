@@ -1,0 +1,313 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-image: url('https://example.com/your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 4rem 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Typography and Color Scheme */
+h1, h2, h3 {
+    color: #e94560; /* Use a vibrant color for headings */
+    font-family: 'Roboto', sans-serif; /* Modern font for headings */
+}
+
+p {
+    color: #fff; /* Set paragraph text to white for better contrast */
+}
+
+
+.project {
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #2e0741cb; /* Dark purple background */
+    color: #861c2d; /* Cyberpunk neon pink for the text */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding */
+    position: relative;
+    width: 100%; /* Full width */
+    bottom: 0;
+    clear: both;
+    font-size: 14px; /* Adjust the text size */
+    font-family: 'Roboto', sans-serif; /* Add a clean, modern font */
+}
+
+footer p {
+    margin: 0; /* Remove extra margin from the paragraph */
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark gradient */
+    color: #e94560; /* Neon pinkish text color */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.project {
+    border: 1px solid #e94560; /* Neon border */
+    box-shadow: 0 4px 20px rgba(233, 69, 96, 0.5); /* Glow effect */
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 40px rgba(233, 69, 96, 0.7); /* Enhanced glow on hover */
+}
+.view-project {
+    display: inline-block; /* Make it a block for padding */
+    padding: 10px 20px; /* Add some padding for a button-like effect */
+    background-color: #e94560; /* Use a vibrant background color */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.view-project:hover {
+    background-color: #d83c50; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+body {
+    background: url('images/cyberpunkbg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for text readability */
+    z-index: -1;
+}
+.skills ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes padding */
+}
+
+.skills li {
+    color: white; /* Sets the text color to white */
+    font-size: 16px; /* Adjust the font size if needed */
+    margin: 5px 0; /* Adds some margin between list items */
+}
+/* Skills Section */
+#skills {
+    background-color: #1b1b2f;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#skills h2 {
+    color: #e94560;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #16213e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(190, 169, 169, 0.5);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e94560;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: #fffefe;
+    border-radius: 5px;
+    height: 8px;
+    width: 0%;
+    animation: loadSkill 2s forwards;
+}
+
+/* Keyframe for skill loading animation */
+@keyframes loadSkill {
+    to {
+        width: 90%; /* Adjust per skill in HTML */
+    }
+}
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%; /* Adjust for each skill */
+    }
+}
+#about p {
+    color: white; /* Keep the text color white */
+    text-shadow: 0 0 5px #000000, 0 0 10px #751c1c; /* Neon pink glow effect */
+    margin: 20px 0; /* Adds vertical space above and below the paragraph */
+    line-height: 1.5; /* Increases space between lines of text */
+    letter-spacing: 1px; /* Adds space between each letter */
+    font-size: 1.1rem; /* Optional: Increase font size */
+    padding: 10px; /* Adds internal space within the element */
+}
+#contact {
+    background: linear-gradient(to right, #1a1a2e, #16213e); /* Dark gradient background */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #ff007f; /* Cyberpunk pink */
+    font-size: 2.5rem; /* Increased font size for emphasis */
+    margin-bottom: 2rem;
+    text-shadow: 0 0 8px #ff007f;
+}
+
+.contact-card {
+    display: inline-block;
+    background-color: #111;
+    padding: 3rem; /* Increased padding for a larger card */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add depth */
+    border: 1px solid #ff007f; /* Glowing pink border */
+    max-width: 500px; /* Set a maximum width for the card */
+}
+
+.contact-item {
+    margin: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #ff007f; /* Glowing icon color */
+    margin-right: 10px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ff007f;
+    text-shadow: 0 0 5px #ff007f;
+}
+.contact-card {
+    display: inline-block;
+    background-color: #111;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: #ff007f; /* Cyberpunk pink */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ff007f; /* Border color */
+    border-radius: 5px;
+    background-color: #222; /* Dark background */
+    color: white; /* Text color */
+}
+
+button {
+    background-color: #ff007f; /* Cyberpunk pink */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d83c50; /* Darker shade on hover */
+}
